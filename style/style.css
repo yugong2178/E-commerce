@@ -1,0 +1,127 @@
+/* nav fill whole WebPage width */
+body {
+    margin: 0;
+    padding: 0;
+	padding-bottom: 60px;
+}
+/* navigation bar */
+.navigation-table {
+	position: fixed;
+    top: 0;
+    left: 0;
+	 /* Ensure it's above other content */
+    border-collapse: collapse;
+    width: 100%;
+}
+.navigation-table th, .navigation-table td {
+    border: 1px solid #272727;
+    text-align: center;
+    padding: 8px;
+    color: #ffffff;
+}
+.navigation-table th {
+    background-color: #272727;
+    color: #ffffff;
+    text-align: center;
+}
+/* search bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+}
+.search-container input[type="text"] {
+    width: calc(70% - 40px); 
+    padding: 8px;
+}
+.search-container button {
+    width: auto;
+    height: 30px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.search-container button img {
+    width: 29px; 
+    padding: 1px; 
+    margin-left: -40px; 
+}
+/* ShopLogo img */
+img.logo {
+    width: 80px; 
+}
+
+/* navigation links */
+.navigation-links {
+    gap: 20px;
+    background-color: #272727; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 0 20px; 
+    width: calc(100% - 40px); 
+}
+
+.navigation-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0;
+}
+
+.navigation-links a:hover {
+    text-decoration: underline;
+}
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    color: white;
+    padding: 10px 20px;
+}
+
+/* HomePage image */
+.homepage-image {
+    width: 100%; 
+    height: auto;
+}
+
+/* footer */
+.footer {
+	position: fixed;
+    bottom: 0;
+	left:0;
+	 width: 100%;
+    background-color: #272727;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
